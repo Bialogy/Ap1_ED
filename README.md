@@ -7,6 +7,8 @@
 
 ### Cli McRonalds
 
+O arquivo CliMcRonalds.exe se encontra dentro da pasta mcronalds.
+
 + O progama inicia com uma interface podendo entrar como cliente, funcionário ou encerrar programa.
 + Opção 1, **cliente**: ver produtos, cadastrar pedido,  deletar pedido, achar pedido, verificar posição na fila e voltar para o menu anterior. 
 + Opção 2, **funcionário**: procurar produto, procurar pedido, listar produtos, listar pedidos, voltar para o menu anterior. 
