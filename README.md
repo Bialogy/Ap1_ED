@@ -1,41 +1,102 @@
 # Ap1 Estrutura de Dados 2023.2
 
 ## **Grupo**:
-+ **Gustavo Braga**
++ **Victor Furtado**
 + **Ana Beatriz Lessa**
 + **João Pedro Alencar**
 
-### Cli McRonalds
+## Primeiros Passos
 
-O arquivo CliMcRonalds.exe se encontra dentro da pasta mcronalds.
+**Opções do Menu:**
+    - Ao executar o programa, você será apresentado a um menu de opções. Digite o número correspondente para realizar a ação desejada.
 
-+ O progama inicia com uma interface podendo entrar como cliente, funcionário ou encerrar programa.
-+ Opção 1, **cliente**: ver produtos, cadastrar pedido,  deletar pedido, achar pedido, verificar posição na fila e voltar para o menu anterior. 
-+ Opção 2, **funcionário**: procurar produto, procurar pedido, listar produtos, listar pedidos, voltar para o menu anterior. 
-+ Opção 3, Encerrar o programa.
+## Opções do Menu
 
-**Cliente**:
-+ Opção 1: todos os produtos disponíveis para pedir serão listados.
-    + cada produto tem id, nome, descrição e preço.
-+ Opção 2: 
-    + o cliente deve indicar se o produto é ou não um delivery através de um "s" ou "n". Caso escolha que sim, um valor de 10.00 será adicionado ao valor total do pedido.
-    + o cliente podera escolher quantos produtos diferentes ele vai pedir, o produto que ele vai pedir pelo id e a quantidade de cada produto.
-+ Opção 3: o cliente poderá deletar um pedido que já realizou.
-+ Opção 4: pede para o cliente escolher o id do pedido e depois mostra o pedido. 
-+ Opção 5: pede para o cliente escolher o id do pedido que deseja verificar a posição na fila.
-    + Mostra se o pedido está expedido, se é o próximo da fila ou sua posição na fila.
-+ Opção 6: Retorna para o menu inicial.
+1. **Cadastrar produto:**
+    - Adiciona um novo produto ao sistema. Siga as instruções para inserir os detalhes do produto.
 
-**Funcionário**:
-+ Opção 1: o funcionário deve entrar o id do produto que deseja que o cli exiba.
-+ Opção 2: o funcionário deve entrar o id do pedido que deseja que o cli exiba.
-+ Opção 3: todos os produtos disponíveis para pedir serão listados.
-    + Opção 1: cadastrar um novo produto.
-        + deve-se inserir nome (string), descrição(string) e preço(float64).
-    + Opção 2: deletar um produto pelo seu id
-    + Opção 3: retornar
-+ Opção 4: mostra os pedidos existentes
-    + existe a opção de expedir pedido, a qual vai marcar o primeiro pedido da fila como concluído.
-+ Opção 5: mostra:
-    + número de produtos cadastrados, número total de pedidos encerrados , número de pedidos em andamento, faturamento total até o momento e tempo médio de expedição.
+2. **Remover produto:**
+    - Remove um produto do sistema. Informe o ID do produto a ser removido.
 
+3. **Atualizar produto:**
+    - Atualiza os detalhes de um produto. Informe o ID do produto a ser atualizado e forneça as novas informações.
+
+4. **Buscar produto por ID:**
+    - Busca um produto pelo seu ID. Informe o ID do produto a ser pesquisado.
+
+5. **Buscar produto por nome:**
+    - Busca produtos pelo nome ou pelo início do nome. Informe o nome ou parte do nome do produto.
+
+6. **Exibir todos os produtos ordenados por ID:**
+    - Exibe todos os produtos ordenados pelos seus IDs.
+
+7. **Exibir todos os produtos ordenados por nome:**
+    - Exibe todos os produtos ordenados pelos seus nomes.
+
+8. **Adicionar pedido:**
+    - Adiciona um novo pedido. Você pode especificar se o pedido é para entrega. Informe os IDs dos produtos e as quantidades para o pedido.
+
+9. **Expedir pedido:**
+    - Marca um pedido como expedido. Informe o ID do pedido a ser expedido.
+
+10. **Exibir métricas do sistema:**
+    - Exibe métricas do sistema, incluindo o número total de produtos, pedidos, etc.
+
+20. **Exibir todos os pedidos em andamento:**
+    - Exibe todos os pedidos que estão atualmente em andamento.
+
+21. **Cadastrar produtos em lote:**
+    - Permite adicionar vários produtos em lote. Siga as instruções para adicionar produtos até decidir parar.
+
+100. **Sair do programa:**
+    - Encerra o programa. Esta opção permite encerrar o programa de forma controlada.
+
+## Exemplos
+
+### Cadastrar produto:
+```plaintext
+1
+Nome do produto: batata
+Descrição: descrição do batata
+Preço do produto (em R$): 5.00
+```
+
+### Buscar produto por nome:
+```plaintext
+5
+Informe o nome do produto ou o início do nome: batata
+```
+Saída:
+```plaintext
+Produto encontrado:
+ID: 1
+Nome: batata
+Descrição: descrição do batata
+Preço: R$ 5.00
+```
+
+### Adicionar pedido:
+```plaintext
+8
+O pedido é para entrega (s/n)? n
+1 2
+2 1
+0 0
+```
+
+### Expedir pedido:
+```plaintext
+9
+Informe o ID do pedido a ser expedido: 1
+```
+
+### Exibir métricas do sistema:
+```plaintext
+10
+```
+Saída:
+```plaintext
+Métricas do Sistema:
+Total de produtos: 2
+Total de pedidos: 1
+```
